@@ -36,7 +36,7 @@ routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
 async def root_route_handler(request):
-    return web.json_response("https://github.com/AshutoshGoswami24")
+    return web.json_response("https://t.me/oo7jatji")
 
 async def web_server():
     web_app = web.Application(client_max_size=30000000)
@@ -49,9 +49,9 @@ async def account_login(bot: Client, m: Message):
        Ashu.START_TEXT, reply_markup=InlineKeyboardMarkup(
             [
                     [
-                    InlineKeyboardButton("✜ ᴀsʜᴜᴛᴏsʜ ɢᴏsᴡᴀᴍɪ 𝟸𝟺 ✜" ,url="https://t.me/AshutoshGoswami24") ],
+                    InlineKeyboardButton("✜ Join Bots Update Channel  ✜" ,url="https://t.me/WarriorUnitsBots") ],
                     [
-                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/AshuSupport") ]                               
+                    InlineKeyboardButton("☠️ Owner ☠️" ,url="https://t.me/AshuSupport") ]                               
             ]))
 @bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
@@ -238,9 +238,7 @@ async def main():
         print(f"Web server started on port {PORT}")
 
 if __name__ == "__main__":
-    print("""
-    █░█░█ █▀█ █▀█ █▀▄ █▀▀ █▀█ ▄▀█ █▀▀ ▀█▀     ▄▀█ █▀ █░█ █░█ ▀█▀ █▀█ █▀ █░█   
-    ▀▄▀▄▀ █▄█ █▄█ █▄▀ █▄▄ █▀▄ █▀█ █▀░ ░█░     █▀█ ▄█ █▀█ █▄█ ░█░ █▄█ ▄█ █▀█ """)
+    print(""" Join @WarriorUnitsBots """)
 
     # Start the bot and web server concurrently
     async def start_bot():
